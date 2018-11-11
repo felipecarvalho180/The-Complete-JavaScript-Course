@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="sass/style.css" />
+    
+</head>
+
+<body>
+    <p id="a"></p>
+    <p id="name"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <p id="d"></p>
+    <p id="e"></p>
+    <p id="f"></p>
+    <p id="g"></p>
+    <p id="h"></p>
+    <p id="i"></p>
+    <p id="j"></p>
+    <p id="k"></p>
+    <p id="l"></p>
+    <p id="m"></p>
+    <p id="n"></p>
+    <p id="o"></p>
+    <p id="p"></p>
+    <p id="q"></p>
+    <p id="r">
+        <!--Event Formulary-->
+        <form name="form">
+            Username: 
+            <input type="text" name="user" value=""><br><br>
+            Password:
+            <input type="password" name="password" value=""><br><br>
+            <input type="button" value="Save!" onclick="funFormul();">
+        </form>
+        <p id="r1"></p>
+    </p>
+    <p id="s">
+        <form name="check">
+            <input type="checkbox" name="box"><br>
+            <input type="button" value="Check" onclick="funChecked();">
+        </form>
+        <p id="s1"></p>
+    </p>
+
+    <!--Event Handling-->
+    <form name="a">
+        <input type="button" value="Click Here!" onclick="alert('You have clicked the buttom');"><br><br>
+        <input type="button" value="Math Button" onclick="funMath();"><br><br>
+        <input type="button" value="Date Button" onclick="funDate();"><br><br>
+    </form>
+
+    <!--Simple Calculator-->
+    <hr>
+    <h2>Simple Calculator:</h2>
+    <p>Principal Amount: <input id="princ"></p>
+    <p>Rate: <input id="rate"></p>
+    <p>N of years: <input id="year"></p>
+    <button onClick="calculate()">Calculate</button>
+    <p id="result"></p>
+    <hr>
+
+
+    <a href="/" onmouseover="document.bgColor='red'">Red</a>
+    <a href="/" onmouseover="document.bgColor='green'">Green</a><br><br>
+
+
+    <!--Background color select-->
+    <form>
+        <select name="BackGroundColor" size="1" onChange="document.bgColor = BackGroundColor.options[BackGroundColor.selectedIndex].value">
+            <option value="730200">Red</option>
+            <option value="green">Green</option>
+        </select>
+    </form><br>
+
+    <!--Progress bar-->
+    <hr>
+    <h2>Progress Bar:</h2>
+    <div id="myProgress">
+        <div id="myBar">
+        </div>
+    </div><br>
+    <button onclick="move()">Click Here!</button>
+    <hr>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
